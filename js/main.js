@@ -18,3 +18,14 @@ $('.r_js').slick({
         }
       ]
   });
+// bg color js
+ $(window).scroll(function(){
+
+    $scrollTop = $(this).scrollTop();
+    if($scrollTop > 200){
+      $(".navbar").addClass('nav_bg');
+    }else{
+      $(".navbar").removeClass('nav_bg');
+    }
+
+  });
