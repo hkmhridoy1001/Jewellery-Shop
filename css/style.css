@@ -454,10 +454,11 @@ box-shadow: 10px 10px 5px 0px rgba(200,197,250,0.47);
 /* contact section end */
 
 /* fotter section start  */
-#footer{
+#footer {
 	background-color: #363636;
 	padding: 90px 0px 0px 0px;
 	position: relative;
+	z-index: -10;
 }
 .icon_address i{
 	color: #f8f8f8;
@@ -488,13 +489,14 @@ box-shadow: 10px 10px 5px 0px rgba(200,197,250,0.47);
 	margin-left: 10px;
 }
 .logo_footer{
-	z-index: 999999;
-	position: absolute;
+	
+	position: relative;
 }
 .logo_footer .footer_brand:hover {
 	color: transparent; 
 	text-decoration: none;
 }
+shapes_footer
 
 
 .email_area .form-1 {
@@ -505,10 +507,10 @@ box-shadow: 10px 10px 5px 0px rgba(200,197,250,0.47);
 	font-weight: 400;
 	color: #12121257;
 }
-.email_area h5{
-	margin-left: -255px;
+.email_area h5 {
+	margin-left: -170px;
 	margin-bottom: 0;
-	color: #504e4e;
+	color: #ebebeb;
 	font-size: 17px;
 }
 .middle_footer{
@@ -599,13 +601,30 @@ box-shadow: 10px 10px 5px 0px rgba(200,197,250,0.47);
 }
 .shapes_footer {
 	position: absolute;
-	top: -37px;
-	width: 153px;
-	left: 113px;
+	width: 150px;
+	left: -6px;
+	top: -139px;
+	z-index: -1;
 }
-
+.google_map {
+	height: 100%;
+}
 /* fotter section end  */
 
+
+/* bg in navbar  */
+.nav_bg{
+    background-color:#f7c752;
+    animation: bg 1s;
+}
+@keyframes bg{
+    from{
+        top:-100px;
+    }
+    to{
+        top:0;
+    }
+}
 
 /* 
 font-family: 'Open Sans', sans-serif;
