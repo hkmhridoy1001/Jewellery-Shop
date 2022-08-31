@@ -14,52 +14,60 @@
     <!-- font awesome cdn link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
+    
     <!-- custom css  -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- resonsive css link  -->
+    <link rel="stylesheet" href="css/responsive.css">
+
 
 
     <title>Jewellery</title>
   </head>
   <body>
     <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#">
-        <img src="images/logo.png" alt=""><h4>LODGE</h4> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Jewellery</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact Us</a>
-          </li>
-          
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#shop">
-              <i class="fa-solid fa-bag-shopping"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+   <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo.png" alt=""><h4>LODGE</h4> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#banner">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Jewellery</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link" href="#">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop">
+                <i class="fa-solid fa-bag-shopping"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+   </div>
     <!-- navbar end -->
 
     <!-- banner section start -->
@@ -124,7 +132,7 @@
             <div class="card1">
               <p>BEst Price</p>
               <div class="img_card2 text-center"><img src="images/card2.png" class="img-fluid"></div>
-              <h3>Bracelete</h3>
+              <h3>RING</h3>
             </div>
               
           </div>
@@ -132,7 +140,7 @@
             <div class="card1">
               <p>BEst Price</p>
               <div class="img_card3 text-center"><img src="images/card3.png" class="img-fluid"></div>
-              <h3>Bracelete</h3>
+              <h3>EARINGS</h3>
             </div>
               
           </div>
@@ -176,12 +184,14 @@
     <section id="price">
       <div class="container">
         <div class="row">
-          <div class="heading_text">
-            <h3>Our Jewellery Price </h3>
+          <div class="col-md-12">
+            <div class="heading_text">
+              <h3>Our Jewellery Price </h3>
+            </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6">
             <div class="price_card">
               <h4>Diamond Ring</h4>
               <div class="price_img">
@@ -193,7 +203,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-6">
             <div class="price_card">
               <h4>Diamond Ring</h4>
               <div class="price_img">
@@ -231,22 +241,24 @@
     <section id="shop">
       <div class="container">
         <div class="row shrink">
-          <div class="col-md-4">
-           <div class="shop_text">
-            <h3>special</h3>
-            <h1>Weading Ring</h1>
-            <div class="btn6">
-              <a href="#">Buy Now</a>
-            </div>
-            
-           </div>
-           
-          </div>
-          <div class="col-md-8">
-            <div class="shop_img">
-              <img src="images/special_img.png" class="img-fluid">
-            </div>
-          </div>
+          
+            <div class="col-md-4">
+              <div class="shop_text">
+               <h3>special</h3>
+               <h1>Weading Ring</h1>
+               <div class="btn6">
+                 <a href="#">Buy Now</a>
+               </div>
+               
+              </div>
+              
+             </div>
+             <div class="col-md-8">
+               <div class="shop_img">
+                 <img src="images/special_img.png" class="img-fluid">
+               </div>
+             </div>
+          
         </div>
         <div class="shapes5">
           <img src="images/buble_shapes.png" class="img-fluid"  alt="">
@@ -315,10 +327,7 @@
   
           
           </div>
-          
-        
-
-        
+ 
       </div>
 
     </section>
@@ -360,7 +369,7 @@
           </div>
           <div class="col-md-6">
             <div class="google_map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29193.68857181727!2d90.27318349206541!3d23.84663753807977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1661490923104!5m2!1sen!2sbd" width="540" height="280" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29193.68857181727!2d90.27318349206541!3d23.84663753807977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1661490923104!5m2!1sen!2sbd" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           
@@ -380,12 +389,16 @@
         <div class="row">
           <div class="col-md-3">
             <div class="logo_footer">
+              <div class="shapes_footer">
+                <img src="images/footer_img_shapes.png" class="img-fluid"  alt="">
+              </div>
               <a class="footer_brand" href="#">
                 <img src="images/logo.png" alt=""><h4>LODGE</h4> </a>
+               
             </div>
           </div>
           <div class="col-md-3">
-            <div class="footer_address ">
+            <div class="footer_address1 ">
               <div class="icon_address">
                 <i class="fa-solid fa-location-dot"><span>Address</span> </i>
               </div>
@@ -401,7 +414,7 @@
           <div class="col-md-3">
             <div class="footer_address">
               <div class="icon_address">
-                <i class="fa-solid fa-envelope"><span>admain@demo.gmail.com</span></i>
+                <i class="fa-solid fa-envelope"><span>admain@gmail.com</span></i>
               </div>
             </div>
           </div>
@@ -434,9 +447,7 @@
             </div>
           </div>
         </div>
-        <div class="shapes_footer">
-          <img src="images/footer_img_shapes.png" class="img-fluid"  alt="">
-        </div>
+        
       </div>
 
     </section>
